@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import fileClip from "../../assets/fileClip.svg";
 
 export default function File({ ...props }) {
     return (
@@ -16,7 +15,7 @@ export default function File({ ...props }) {
         viewBox="0 0 324 447"
         fill="none"
         style={{
-          maskImage: `url(${fileClip})`,
+          maskImage: `url(/fileClip.svg)`,
           maskRepeat: "no-repeat",
           maskPosition: "100% 100%",
           maskSize: "cover",
