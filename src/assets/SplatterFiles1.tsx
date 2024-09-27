@@ -93,7 +93,7 @@ export const SplatterFiles1 = () => {
         fill="url(#paint12_linear_17_569)"
       />
 
-      <g filter="url(#filter5_f_17_569)">
+      <g className="animate-floatSlow" filter="url(#filter5_f_17_569)">
         <g filter="url(#filter6_b_17_569)">
           <path
             d="M7.33918 45.3542L76.5187 26.572L119.513 51.2051L149.864 162.997C150.899 166.808 148.648 170.736 144.837 171.771L48.7444 197.86C44.9332 198.895 41.0049 196.644 39.9701 192.833L2.31202 54.1285C1.27729 50.3173 3.52803 46.389 7.33918 45.3542Z"
