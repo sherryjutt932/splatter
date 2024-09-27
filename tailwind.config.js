@@ -14,8 +14,8 @@ export default {
         },
       },
       animation: {
-        spin: "spin 20s ease infinite",
-        spinSlow: "spin 120s ease infinite",
+        spin: "spin 20s linear infinite",
+        spinSlow: "spin 120s linear infinite",
         floatSlow: "float 8s ease-in-out infinite",
         floatFast: "float 3s ease-in-out infinite",
         float: "float 5s ease-in-out infinite",

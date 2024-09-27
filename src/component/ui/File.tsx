@@ -31,7 +31,7 @@ export default function File({ ...props }) {
           <path
             d="M223.402 2.78369L22.9017 2.78369C11.856 2.78369 2.90173 11.738 2.90173 22.7837L2.90173 424.784C2.90173 435.829 11.856 444.784 22.9017 444.784H301.402C312.447 444.784 321.402 435.829 321.402 424.784V100.784M223.402 2.78369L321.402 100.784M223.402 2.78369V80.7837C223.402 91.8294 232.356 100.784 243.402 100.784H321.402"
             stroke="url(#paint0_linear_7_895)"
-            stroke-width="4"
+            stroke-width="3"
           />
         </g>
         <path
@@ -73,8 +73,8 @@ export default function File({ ...props }) {
             y2="440.71"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#4A0064" />
-            <stop offset="1" stop-color="#FEB6FF" />
+            <stop stop-color="#300B88" />
+            <stop offset="1" stop-color="#9E70FD" />
           </linearGradient>
           <linearGradient
             id="paint1_linear_7_895"
@@ -84,8 +84,8 @@ export default function File({ ...props }) {
             y2="408.034"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#B24AB3" />
-            <stop offset="1" stop-color="#FEB6FF" />
+            <stop stop-color="#D9C5FF" />
+            <stop offset="1" stop-color="#9E70FD" />
           </linearGradient>
         </defs>
       </motion.svg>

@@ -12,12 +12,15 @@ const Login = () => {
   return (
     <section className="relative h-screen w-full">
       <div className="sm:p-10 flex flex-col justify-start sm:justify-between h-full items-start gap-10">
-        <img src={Logo} alt="Logo" className="max-sm:m-5 h-10 sm:h-14 w-auto" />
-        <div className="px-10 sm:px-12 flex flex-col gap-5 sm:gap-10 justify-between items-start">
-          <h1 className="text-[9vw] sm:text-6xl font-bold leading-[1.1]">
-            <TransformText text="Because job" /> <br />
-            <TransformText text="Applications Suck" delay={.6} />
-            {/* Because job <br /> applications suck */}
+        <div className="max-sm:py-8"></div>
+        <div className="px-8 sm:px-10 flex flex-col gap-0 justify-between items-start">
+          <img
+            src={Logo}
+            alt="Logo"
+            className="h-20 sm:h-32 w-auto"
+          />
+          <h1 className="pl-2 mb-6 text-splatter-100 text-base sm:text-lg font-bold leading-[1.1]">
+            <TransformText text="Because job Applications Suck" />
           </h1>
           <motion.div
             initial={{ opacity: 0 }}
@@ -26,7 +29,7 @@ const Login = () => {
               delay: 1.2,
               duration: 1,
             }}
-            className="flex gap-3"
+            className="pl-2 flex gap-3"
           >
             <Button>Login</Button>
             <Button variant="outline">Signin with Google</Button>
@@ -53,8 +56,8 @@ const Login = () => {
           }}
           className="pointer-events-none absolute inset-0 z-[-2] overflow-hidden"
         >
-          <div className="animate-scale absolute w-[25vw] h-[25vw] left-[45vw] top-[14vh] bg-splatter-700 opacity-80 blur-[100px] -translate-x-1/2 -translate-y-1/2 rounded-full"></div>
-          <div className="animate-scale absolute w-[12vw] h-[12vw] left-[79vw] top-[-2vh] bg-sec-400 opacity-80 blur-[80px] -translate-x-1/2 -translate-y-1/2 rounded-full"></div>
+          <div className="animate-scale absolute w-[25vw] h-[25vw] left-[45vw] top-[14vh] bg-splatter-700 opacity-60 blur-[100px] -translate-x-1/2 -translate-y-1/2 rounded-full"></div>
+          <div className="animate-scale absolute w-[12vw] h-[12vw] left-[79vw] top-[-2vh] bg-splatter-250 opacity-80 blur-[80px] -translate-x-1/2 -translate-y-1/2 rounded-full"></div>
           <SplatterFiles1 />
           <SplatterFiles2 />
           <SplatterFiles3 />
@@ -83,7 +86,7 @@ const Login = () => {
         <div className="animate-floatFast absolute right-[42vw] bottom-[10vh] sm:right-[19vw] sm:bottom-[10vh]">
           <File className="w-[35vw] sm:w-[min(250px,16vw)] h-auto rotate-[31.22deg] bg-white/5 backdrop-blur-md" />
         </div>
-        <div className="animate-floatSlow absolute right-[1vw] bottom-[1vh] sm:right-[-.5vw] sm:bottom-[-2vh]">
+        <div className="animate-floatSlow absolute right-[1vw] bottom-[1vh] sm:right-[1vw] sm:bottom-[-2vh]">
           <File className="w-[28vw] sm:w-[min(220px,14vw)] h-auto rotate-[7.8deg] bg-white/5 backdrop-blur-md" />
         </div>
       </div>

@@ -9,10 +9,10 @@ export const SplatterFiles3 = () => {
       xmlns="http://www.w3.org/2000/svg"
     >
       <g opacity="0.3" filter="url(#filter0_f_6_871)">
-        <circle cx="528" cy="528" r="274" fill="#EC6E94" />
+        <circle cx="528" cy="528" r="274" fill="#9E70FD" />
       </g>
       <g opacity="0.5" filter="url(#filter1_f_6_871)">
-        <circle cx="800" cy="496" r="138" fill="#7940F4" />
+        <circle cx="800" cy="496" r="138" fill="#300B88" />
       </g>
       <g className="animate-float">
         <g filter="url(#filter2_b_6_871)">
@@ -110,8 +110,8 @@ export const SplatterFiles3 = () => {
           y2="452.904"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#4A0064" />
-          <stop offset="1" stop-color="#FEB6FF" />
+          <stop stop-color="#300B88" />
+          <stop offset="1" stop-color="#9E70FD" />
         </linearGradient>
         <linearGradient
           id="paint1_linear_6_871"
@@ -121,8 +121,8 @@ export const SplatterFiles3 = () => {
           y2="455.143"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#B24AB3" />
-          <stop offset="1" stop-color="#FEB6FF" />
+          <stop stop-color="#D9C5FF" />
+          <stop offset="1" stop-color="#9E70FD" />
         </linearGradient>
       </defs>
     </svg>
