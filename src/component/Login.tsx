@@ -14,7 +14,13 @@ const Login = () => {
       <div className="sm:p-10 flex flex-col justify-start sm:justify-between h-full items-start gap-10">
         <div className="max-sm:py-8"></div>
         <div className="px-8 sm:px-10 flex flex-col gap-0 justify-between items-start">
-          <img
+          <motion.img
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{
+              delay: 0.2,
+              duration: 1,
+            }}
             src={Logo}
             alt="Logo"
             className="h-20 sm:h-32 w-auto"
