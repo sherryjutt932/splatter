@@ -7,6 +7,7 @@ import { motion } from "framer-motion";
 import TransformText from "./ui/TransformText";
 import File from "./ui/File";
 import Button from "./ui/Button";
+import SliderWithTiers from "./ui/Slider";
 
 const Login = () => {
   return (
@@ -28,6 +29,24 @@ const Login = () => {
           <h1 className="pl-2 mb-6 text-splatter-100 text-base sm:text-lg font-bold leading-[1.1]">
             <TransformText text="Because job Applications Suck" />
           </h1>
+          <div className="min-w-[250px] w-[30vw]">
+            <SliderWithTiers
+              min={0.65}
+              max={3}
+              step={0.01}
+              className="my-custom-slider-class"
+              style={{ marginTop: "20px" }}
+            />
+            <SliderWithTiers
+              lightMode
+              min={0.65}
+              max={3}
+              step={0.01}
+              className="my-custom-slider-class"
+              style={{ marginTop: "20px" }}
+            />
+            <br />
+          </div>
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
