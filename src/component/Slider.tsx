@@ -1,6 +1,4 @@
-import React, { useState } from "react";
 import "./SliderStyle.css";
-// import { COLORS } from './Sheen'; // Adjust the import path for COLORS
 
 interface SliderWithTiersProps {
     value: number | undefined;
