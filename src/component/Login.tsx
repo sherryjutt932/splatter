@@ -7,11 +7,19 @@ import { motion } from "framer-motion";
 import TransformText from "./ui/TransformText";
 import File from "./ui/File";
 import Button from "./ui/Button";
-import SliderWithTiers from "./ui/Slider";
+import DropdownField from "./DropdownField";
+import { useState } from "react";
 
 const Login = () => {
+  const [selectedOption, setSelectedOption] = useState<string>("option1");
+  const options = [
+    { label: 'Option 1', value: 'option1' },
+    { label: 'Option 2', value: 'option2' },
+    { label: 'Option 3', value: 'option3' },
+  ];
+
   return (
-    <section className="relative h-screen w-full">
+    <section className="relative h-screen w-full overflow-hidden">
       <div className="sm:p-10 flex flex-col justify-start sm:justify-between h-full items-start gap-10">
         <div className="max-sm:py-8"></div>
         <div className="px-8 sm:px-10 flex flex-col gap-0 justify-between items-start">
@@ -30,22 +38,16 @@ const Login = () => {
             <TransformText text="Because job Applications Suck" />
           </h1>
           <div className="min-w-[250px] w-[30vw]">
-            <SliderWithTiers
-              min={0.65}
-              max={3}
-              step={0.01}
-              className="my-custom-slider-class"
-              style={{ marginTop: "20px" }}
+            <DropdownField
+            label="Names"
+              value={selectedOption}
+              onChange={setSelectedOption}
+              options={options}
+              placeholder="Choose an option" // Optional
+              disabled={false} // Optional: Disable the dropdown if needed
+              inputClassName="custom-class-name" // Optional: Custom CSS class for input
             />
-            <SliderWithTiers
-              lightMode
-              min={0.65}
-              max={3}
-              step={0.01}
-              className="my-custom-slider-class"
-              style={{ marginTop: "20px" }}
-            />
-            <br />
+            <p>Selected: {selectedOption}</p>
           </div>
           <motion.div
             initial={{ opacity: 0 }}
